@@ -46,6 +46,38 @@ Table of Content:
 
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
+
+
+.margem_raposa{
+  margin-left: 70px;
+}
+
+.margem_links{
+  margin-right: 70px;
+}
+
+.aumenta_icone{
+  font-size:24px;
+  float:right;
+  color:#000000;
+}
+.card{  margin: 0 12px 20px 0;
+  background: white;
+  padding: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);}
+
+.Nome_equipe{
+  color:#BF102D;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+.Nome_integrante{
+  color:#BF102D;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
 ul {
   list-style: none;
   margin: 0px;
@@ -119,6 +151,18 @@ img.resize_equipe {
   width:500px;
   height:280px;
 }
+
+
+img.resize_raposa {
+  width:100px;
+  height:56px;
+}
+
+img.resize_digao{
+  width:277px;
+  height:420px;
+}
+
 /* Container Custome Code css
 ============================================================================================ */
 @media (min-width: 1200px) {
@@ -208,13 +252,16 @@ img.resize_equipe {
   top: 0px;
   left: 0px;
   z-index: 30;
-  padding: 0px 75px;
+  padding: 0px 0px;
   border-bottom: 1px solid #626571;
 }
 
 .main_menu_area .navbar {
   padding: 0px;
-  background-color: transparent !important;
+  /* background-color: transparent !important; */
+  background-color: black !important;
+  background-image: url("../img/textura/fibra_de_carbono.jpg");
+
 }
 
 .main_menu_area .navbar .navbar-collapse {
@@ -240,7 +287,7 @@ img.resize_equipe {
   padding: 0px;
   line-height: 99px;
   color: #fff;
-  font-size: 14px;
+  font-size: 18px;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   -webkit-transition: all 400ms linear 0s;

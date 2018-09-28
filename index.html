@@ -27,19 +27,6 @@
 
         <link href="css/style.css" rel="stylesheet">
         <link href="css/responsive.css" rel="stylesheet">
-        <script>
-        function myMap() {
-        var mapOptions = {
-            center: new google.maps.LatLng(-23.598200, -46.676473),
-            zoom: 17,
-            mapTypeId: google.maps.MapTypeId.map
-        }
-        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-        var marker = new google.maps.Marker({posistion: {lat: -23.598200, lng: -46.676473}, map :map});
-
-        }
-        </script>
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpRHia2xSZ-fspxwcHA5AwMbXUXZMveJc&callback=myMap"></script>
 
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -59,23 +46,24 @@
             </div>
         </section>
         <!--================End Search Area =================-->
-
         <!--================Header Menu Area =================-->
 
           <header class="main_menu_area">
-              <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                  <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
+              <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+                  <a class="navbar-brand margem_raposa" href="#"><img class = "resize_raposa" src="img/gif/fox2.gif" alt=""></a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                       <span></span>
                       <span></span>
                       <span></span>
                   </button>
 
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <div class="collapse navbar-collapse margem_links" id="navbarSupportedContent">
                       <ul class="navbar-nav ml-auto">
                           <!-- <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> -->
                           <li class="nav-item active"><a class="nav-link " href="#section1">Home</a></li>
                           <li class="nav-item active"><a class="nav-link button" href="#section2">Sobre</a></li>
+                          <li class="nav-item active"><a class="nav-link" href="#section2">Equipe</a></li>
+
                           <li class="nav-item active"><a class="nav-link" href="#section3">Robos</a></li>
                           <!-- <li class="nav-item active"><a class="nav-link" href="#section4">A Equipe</a></li> -->
                           <li class="nav-item active"><a class="nav-link" href="#section5">Contact</a></li>
@@ -87,12 +75,13 @@
         <!--================End Header Menu Area =================-->
 
         <!--================Slider Area =================-->
-        <section class="main_slider_area" id = "section1">
+        <section  id = "section1">
             <div id="main_slider" class="rev_slider" data-version="5.3.1.6">
                 <ul>
-                    <li data-index="rs-2946" data-transition="slidevertical" data-slotamount="1" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="1000"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Intro" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                    <li data-index="rs-2946" data-transition="slidehorizontal" data-slotamount="1" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="1000"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Intro" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                     <!-- MAIN IMAGE -->
                         <img src="img/home-slider/slider-1_edit.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+
                         <!-- LAYER NR. 1 -->
                         <div class="slider_text_box">
                             <div class="tp-caption tp-resizeme rev-btn first_text"
@@ -111,7 +100,7 @@
                             data-responsive_offset="on"
                             data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
                             data-textAlign="['center','center','center','center','center','center']"
-                            style="z-index: 8;font-family: 'Poppins', sans-serif;font-weight:600;color:#fff;text-transform: uppercase;"><img src="img/play-video.png" alt=""> <span style="text-decoration: underline;padding-left: 10px;">Veja o making of do FoxBot</span></div>
+                            style="z-index: 8;font-family: 'Poppins', sans-serif;font-weight:600;color:#fff;text-transform: uppercase;"><img src="img/play-video.png" alt=""> <span style="padding-left: 10px;">Veja o making of do FoxBot</span></div>
 
                             <!-- LAYER NR. 10 -->
                             <div class="tp-caption   tp-resizeme tp-videolayer"
@@ -134,7 +123,7 @@
                             data-volume="100"
                             style="z-index: 14;text-transform:left;border-width:0px;"> </div>
 
-                            <!-- LAYER NR. 11 -->
+                            <!-- LAYER NR. 11 Bot -->
                             <div class="tp-caption Agency-CloseBtn rev-btn "
                             id="slide-2971-layer-20"
                             data-x="['center','center','center','center']" data-hoffset="['510','389','270','199']"
@@ -174,23 +163,51 @@
 
                                 style="z-index: 8;font-family:'Poppins', sans-serif;font-weight:700;color:#cc0000;">SMASH
                             </div>
-
-                            <!-- <div class="tp-caption tp-resizeme slider_button"
-                                data-x="['center','center','center','center','center','center']"
-                                data-hoffset="['0','0','0','0']"
-                                data-y="['middle','middle','middle','middle']"
-                                data-voffset="['130','130','130','100','100','100']"
-                                data-width="none"
-                                data-height="none"
-                                data-whitespace="nowrap"
-                                data-type="text"
-                                data-responsive_offset="on"
-                                data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
-                                data-textAlign="['center','center','center','center','center','center']">
-                                <a class="bg_btn" href="#"></a>
-                                <a class="tp_btn" href="#"></a>
-                            </div> -->
                         </div>
+                      </li>
+
+                    <li data-index="rs-2947" data-transition="slidehorizontal" data-slotamount="1" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="1000"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Intro" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                        <!-- MAIN IMAGE -->
+                        <!--   IMAGEM 2   -->
+                            <img src="img/Equipe/equipe.jpeg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                            <!-- LAYER NR. 1 -->
+                            <div class="slider_text_box">
+                                <div class="tp-caption tp-resizeme secand_text"
+                                    data-x="['center','center','center','center','center','center']"
+                                    data-hoffset="['0','80','80','0']"
+                                    data-y="['middle','middle','middle','middle']"
+                                    data-voffset="['0','0','0','0','0']"
+                                    data-fontsize="['48','48','48','28','28','22']"
+                                    data-lineheight="['60','60','60','36','36','30']"
+                                    data-width="100%"
+                                    data-height="none"
+                                    data-whitespace="normal"
+                                    data-type="text"
+                                    data-responsive_offset="on"
+                                    data-transform_idle="o:1;"
+                                    data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
+                                    data-textAlign="['center','center','center','center','center','center']"
+
+                                    style="z-index: 8;font-family:'Poppins', sans-serif;font-weight:700;color:#fff;">
+                                </div>
+
+                                <div class="tp-caption tp-resizeme slider_button"
+                                    data-x="['center','center','center','center','center','center']"
+                                    data-hoffset="['0','0','0','0']"
+                                    data-y="['middle','middle','middle','middle']"
+                                    data-voffset="['130','130','130','100','100','100']"
+                                    data-width="none"
+                                    data-height="none"
+                                    data-whitespace="nowrap"
+                                    data-type="text"
+                                    data-responsive_offset="on"
+                                    data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
+                                    data-textAlign="['center','center','center','center','center','center']">
+                                </div>
+                            </div>
+
+
+
                     </li>
 
                 </ul>
@@ -203,15 +220,27 @@
             <div class="container">
                 <div class="c_feature_box">
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-4">
                             <div class="c_box_item">
-                                <a href="#"><h4><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 12 MEMBROS</h4></a>
+                                <h4><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> VISÃO</h4>
+                               <p>Se tornar uma referência em projetos multidisciplinares de engenharia e na disseminação de conhecimento a todos contribuindo a comunidade Open Source. </p>
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-4">
                             <div class="c_box_item">
-                                <a href="#"><h4><i class="fa fa-clock-o" aria-hidden="true"></i> 3 ROBÔS</h4></a>
-                                <!-- <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p> -->
+                                <h4><i class="fa fa-clock-o" aria-hidden="true"></i> MISSÃO</h4>
+                               <p>Disseminar os conhecimento desenvolvidos e aprendidos em cada projeto com vídeos e artigos (Build Reports), para atender desde o público geral até alunos de outras faculdades. </p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="c_box_item">
+                                <h4><i class="fa fa-diamond" aria-hidden="true"></i>  VALOR</h4>
+                               <p>Pró Atividade<br/>
+                              Comprometimento<br/>
+                              Learn to Learn<br/>
+                              Trabalho em Equipe
+                               </p>
                             </div>
                         </div>
                     </div>
@@ -225,7 +254,7 @@
                                 </div>
                                 <p>A equipe Smash foi fundada em 2016 como iniciativa de 5 alunos e teve apoio e orientação do professor Alex...(CONTINUAR)</p>
                                 <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia dese mollit anim id est laborum. Sed ut perspiciatis unde omnis iste.</p>
-                                <a class="read_btn" href="#">Leia mais</a>
+                                <a class="read_btn" href="equipe.html">Veja mais</a>
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -395,7 +424,7 @@
                                 <div class="l_news_content">
                                     <a href="#"><h4>FoxBot</h4></a>
                                     <p>The Fancy that recognize the talent and effort of the best web designers, develop-ers and agencies in the world.</p>
-                                    <a class="more_btn" href="#">Learn More</a>
+                                    <a class="more_btn" href="#">Leia Mais</a>
                                 </div>
                             </div>
                         </div>
@@ -405,7 +434,7 @@
                                 <div class="l_news_content">
                                     <a href="#"><h4>BeetleFox</h4></a>
                                     <p>The Fancy that recognize the talent and effort of the best web designers, develop-ers and agencies in the world.</p>
-                                    <a class="more_btn" href="#">Learn More</a>
+                                    <a class="more_btn" href="#">Leia Mais</a>
                                 </div>
                             </div>
                         </div>
@@ -415,7 +444,7 @@
                                 <div class="l_news_content">
                                     <a href="#"><h4>Digoncius</h4></a>
                                     <p>The Fancy that recognize the talent and effort of the best web designers, develop-ers and agencies in the world.</p>
-                                    <a class="more_btn" href="#">Learn More</a>
+                                    <a class="more_btn" href="#">Leia Mais</a>
                                 </div>
                             </div>
                         </div>
@@ -423,7 +452,6 @@
                 </div>
             </div>
         </section>
-        <!--================FIM DA AREA DOS ROBOS =================-->
 
         <!--================Footer Area =================-->
         <footer class="footer_area" id = "section5">
@@ -435,7 +463,10 @@
                                 <div class="f_w_title">
                                     <h3 >Entre em contato:</h3>
                                 </div>
-                                <p>+55 11 961955559</p>
+                                <p><i class="fa fa-phone" aria-hidden="true"></i>
+                                    +55 11 961955559</p>
+                                <p><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                    roboticsmash@gmail.com</p>
                                 <!-- <a style = "font-size:20px;color : #ffffff" href="#">+55 11 961955559</a> -->
                                 <!-- <a href="#">info.deercreative@gmail.com</a> -->
                                 <p>Rua Quata, 300 <br/>
@@ -455,6 +486,29 @@
                         </div>
                         <div class ="col-lg-6 col-md-6">
                           <div id="map" style="width:500px;height:300px;background:yellow"></div>
+                          <script>
+                          function myMap() {
+                          var myLatLng = {lat: -23.598476, lng: -46.676665};
+                          var mapOptions = {
+                              center: myLatLng,
+                              zoom: 17,
+                          }
+                          var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+                          var marker = new google.maps.Marker({position: myLatLng, map :map,title : 'Hello World'});
+                          //
+                          // map.setOptions({styles:{
+                          //             featureType: 'poi.business',
+                          //             stylers: [{visibility: 'off'}]
+                          //           },
+                          //           {
+                          //             featureType: 'transit',
+                          //             elementType: 'labels.icon',
+                          //             stylers: [{visibility: 'off'}]
+                          //           }});
+
+                          }
+                          </script>
+                          <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpRHia2xSZ-fspxwcHA5AwMbXUXZMveJc&callback=myMap"></script>
 
                         </div>
                     </div>
