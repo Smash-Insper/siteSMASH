@@ -37,7 +37,7 @@ Table of Content:
 
 /* VERMELHO1:#9C1.82D */
 /* VERMELHO2:#E10.022 */
-/* VERMELHO3:#BF102D */
+/* VERMELHO3:#BF102D -- atual*/
 
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display|Poppins:300,400,500,600,700,800,900");
 .col-md-offset-right-1, .col-lg-offset-right-1 {
@@ -48,8 +48,36 @@ Table of Content:
 /*----------------------------------------------------*/
 
 
+
+.fa:hover{
+  color:#BF102D;
+}
+
+img.thumbnail {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+img.thumbnail:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+img.darken{
+  opacity:0.1;
+}
+
+img.resize_foxbot{
+  width : 250px;
+  height: 141px;
+}
+
 .margem_raposa{
   margin-left: 70px;
+}
+
+.margem_raposa:hover {
+  background-image: url("../img/gif/fox.gif");
 }
 
 .margem_links{
@@ -150,6 +178,11 @@ i:before {
 img.resize_equipe {
   width:500px;
   height:280px;
+}
+
+img.resize_equipe2 {
+  width:1000px;
+  height:560px;
 }
 
 

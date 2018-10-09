@@ -1,16 +1,16 @@
 ;(function($) {
     "use strict";
-    
-    var nav_offset_top = $('header').height(); 
+
+    var nav_offset_top = $('header').height();
     /*-------------------------------------------------------------------------------
-	  Navbar 
+	  Navbar
 	-------------------------------------------------------------------------------*/
 
-	//* Navbar Fixed  
+	//* Navbar Fixed
     function navbarFixed(){
-        if ( $('.main_menu_area, .search_area').length ){ 
+        if ( $('.main_menu_area, .search_area').length ){
             $(window).scroll(function() {
-                var scroll = $(window).scrollTop();   
+                var scroll = $(window).scrollTop();
                 if (scroll >= nav_offset_top ) {
                     $(".main_menu_area, .search_area").addClass("navbar_fixed");
                 } else {
@@ -20,8 +20,8 @@
         };
     };
     navbarFixed();
-    
-    
+
+
     /*----------------------------------------------------*/
     /*  Main Slider js
     /*----------------------------------------------------*/
@@ -31,7 +31,10 @@
                 sliderType:"standard",
                 sliderLayout:"auto",
                 delay:5000,
-                disableProgressBar:"on",
+                disableProgressBar:"off",
+                spinner : "spinner3",
+                stopAfterLoops : "1",
+                stopAtSlide:1,
                 navigation: {
                     onHoverStop: 'off',
                     touch:{
@@ -39,7 +42,7 @@
                     },
                     arrows: {
                         style:"zeus",
-                        enable:false,
+                        enable:true,
                         hide_onmobile:true,
                         hide_under:820,
                         hide_onleave:true,
@@ -73,8 +76,61 @@
         }
     }
     main_slider();
-    
-    
+
+
+    function main_slider_equipe(){
+        if ( $('#main_slider_equipe').length ){
+            $("#main_slider_equipe").revolution({
+                sliderType:"standard",
+                sliderLayout:"auto",
+                delay:5000,
+                disableProgressBar:"off",
+                spinner : "spinner3",
+                stopAfterLoops : "1",
+                stopAtSlide:1,
+                navigation: {
+                    onHoverStop: 'off',
+                    touch:{
+                        touchenabled:"on"
+                    },
+                    arrows: {
+                        style:"zeus",
+                        enable:true,
+                        hide_onmobile:true,
+                        hide_under:820,
+                        hide_onleave:true,
+                        hide_delay:200,
+                        hide_delay_mobile:1200,
+                        tmp:'<div class="tp-title-wrap">  	<div class="tp-arr-imgholder"></div> </div>',
+                        left: {
+                            h_align: "left",
+                            v_align: "center",
+                            h_offset: 5,
+                            v_offset: 0
+                        },
+                        right: {
+                            h_align: "right",
+                            v_align: "center",
+                            h_offset: 5,
+                            v_offset: 0
+                        }
+                    },
+                },
+                responsiveLevels:[4096,1320,1199,992,767,480],
+                gridwidth:[1170,1170,960,720,700,300],
+                gridheight:[600,600,600,600,500,500],
+                lazyType:"smart",
+                fallbacks: {
+                    simplifyAll:"off",
+                    nextSlideOnWindowFocus:"off",
+                    disableFocusListener:false,
+                }
+            })
+        }
+    }
+    main_slider_equipe();
+
+
     /*----------------------------------------------------*/
     /*  Skill Slider
     /*----------------------------------------------------*/
@@ -87,7 +143,7 @@
 	        var progressValue = Self.data('value');
 
 	        Self.find('.progress-bar').animate({
-	          width:progressValue+'%'           
+	          width:progressValue+'%'
 	        }, 1000);
 
 	        Self.find('.number').countTo({
@@ -100,19 +156,19 @@
 	  }
 	}
     progressBarConfig ();
-    
+
     $('.counter').counterUp({
         delay: 10,
         time: 1000
     });
-    
+
     if($(window).width()>992){
         $('.service_area').parallax("50%", 0.4);
         $('.project_area').parallax("50%", 0.4);
     }
-    
-    
-    
+
+
+
     /*----------------------------------------------------*/
     /*  Explor Room Slider
     /*----------------------------------------------------*/
@@ -132,7 +188,7 @@
         }
     }
     testimoninals_carousel();
-    
+
     /*----------------------------------------------------*/
     /* Offcanvas Menu js
     /*----------------------------------------------------*/
@@ -145,11 +201,11 @@
         }
         return false
     });
- 
+
     /*----------------------------------------------------*/
     /*  Google map js
     /*----------------------------------------------------*/
-    
+
     if ( $('#mapBox').length ){
         var $lat = $('#mapBox').data('lat');
         var $lon = $('#mapBox').data('lon');
@@ -348,14 +404,14 @@
         });
 
         map.addMarker({
-            lat: $markerLat, 
+            lat: $markerLat,
             lng: $markerLon,
-            icon: $marker,    
+            icon: $marker,
             infoWindow: {
               content: $info
             }
         })
     }
-    
-    
+
+
 })(jQuery)
