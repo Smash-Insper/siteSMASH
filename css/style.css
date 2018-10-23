@@ -49,6 +49,14 @@ Table of Content:
 
 
 
+
+.features_robo{
+  margin:10px;
+  background-color:#BF102D;
+  color:white;
+  background-image: url("../img/textura/blackred.jpeg");
+}
+
 .fa:hover{
   color:#BF102D;
 }
@@ -76,9 +84,6 @@ img.resize_foxbot{
   margin-left: 70px;
 }
 
-.margem_raposa:hover {
-  background-image: url("../img/gif/fox.gif");
-}
 
 .margem_links{
   margin-right: 70px;
@@ -187,8 +192,8 @@ img.resize_equipe2 {
 
 
 img.resize_raposa {
-  width:100px;
-  height:56px;
+  width:150px;
+  height:79px;
 }
 
 img.resize_digao{
@@ -633,6 +638,16 @@ img.resize_digao{
   border-radius: 2px;
   background: #fff;
   padding: 45px 0px;
+  margin-top: -100px;
+  z-index: 22;
+  position: relative;
+}
+.c_feature_box_features {
+  -webkit-box-shadow: 0px 25px 49px 0px rgba(58, 74, 88, 0.1);
+  box-shadow: 49px 49px 49px 49px rgba(58, 74, 88, 0.1);
+  border-radius: 2px;
+  background: #fff;
+  padding: 10px 0px;
   margin-top: -100px;
   z-index: 22;
   position: relative;

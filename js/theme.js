@@ -33,8 +33,9 @@
                 delay:5000,
                 disableProgressBar:"off",
                 spinner : "spinner3",
-                stopAfterLoops : "1",
-                stopAtSlide:1,
+                RewindatSlideStart:"on",
+                // stopAfterLoops : "1",
+                // stopAtSlide:1,
                 navigation: {
                     onHoverStop: 'off',
                     touch:{
@@ -76,6 +77,55 @@
         }
     }
     main_slider();
+    function main_slider_robots(){
+        if ( $('#main_slider_robots').length ){
+            $("#main_slider_robots").revolution({
+                sliderType:"standard",
+                sliderLayout:"auto",
+                delay:5000,
+                disableProgressBar:"off",
+                spinner : "spinner3",
+                navigation: {
+                    onHoverStop: 'off',
+                    touch:{
+                        touchenabled:"on"
+                    },
+                    arrows: {
+                        style:"zeus",
+                        enable:true,
+                        hide_onmobile:true,
+                        hide_under:820,
+                        hide_onleave:true,
+                        hide_delay:200,
+                        hide_delay_mobile:1200,
+                        tmp:'<div class="tp-title-wrap">  	<div class="tp-arr-imgholder"></div> </div>',
+                        left: {
+                            h_align: "left",
+                            v_align: "center",
+                            h_offset: 5,
+                            v_offset: 0
+                        },
+                        right: {
+                            h_align: "right",
+                            v_align: "center",
+                            h_offset: 5,
+                            v_offset: 0
+                        }
+                    },
+                },
+                responsiveLevels:[4096,1320,1199,992,767,480],
+                gridwidth:[1170,1170,960,720,700,300],
+                gridheight:[500,500,500,500,500,500],
+                lazyType:"smart",
+                fallbacks: {
+                    simplifyAll:"off",
+                    nextSlideOnWindowFocus:"off",
+                    disableFocusListener:false,
+                }
+            })
+        }
+    }
+    main_slider_robots();
 
 
     function main_slider_equipe(){
@@ -86,8 +136,8 @@
                 delay:5000,
                 disableProgressBar:"off",
                 spinner : "spinner3",
-                stopAfterLoops : "1",
-                stopAtSlide:1,
+                // stopAfterLoops : "1",
+                // stopAtSlide:1,
                 navigation: {
                     onHoverStop: 'off',
                     touch:{
@@ -95,7 +145,7 @@
                     },
                     arrows: {
                         style:"zeus",
-                        enable:true,
+                        enable:false,
                         hide_onmobile:true,
                         hide_under:820,
                         hide_onleave:true,

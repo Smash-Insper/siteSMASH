@@ -12,7 +12,14 @@
 $("nav").find("a").click(function(e) {
     e.preventDefault();
     var section = $(this).attr("href");
-    $("html, body").animate({
-        scrollTop: $(section).offset().top
-    });
+    // if (!section.equals("equipe.html")) {
+    if (section != "equipe.html") {
+      $("html, body").animate({
+          scrollTop: $(section).offset().top
+      });
+    }
+    else{
+      window.location = "file:///Users/pedroazambuja/Documents/siteSMASH/equipe.html"
+    }
+
 });
