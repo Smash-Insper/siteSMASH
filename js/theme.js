@@ -34,6 +34,7 @@
                 disableProgressBar:"off",
                 spinner : "spinner3",
                 RewindatSlideStart:"on",
+                NextSlideonEnd:"on",
                 // stopAfterLoops : "1",
                 // stopAtSlide:1,
                 navigation: {

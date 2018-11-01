@@ -80,14 +80,14 @@
                 <ul>
                     <li data-index="rs-2946" data-transition="slidehorizontal" data-slotamount="1" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="1000"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Intro" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                     <!-- MAIN IMAGE -->
-                        <img src="img/robos/foxbot2.jpg" alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg darken" data-no-retina>
+                        <img src="img/robos/FoxBot/foxbot2.jpg" alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg darken" data-no-retina>
                         </div>
                       </li>
 
 
             </div>
         </section>
-        <!--================ Ara do robo =================-->
+        <!--================ Area robô =================-->
         <section class="creative_feature_area" id = "section2">
           <div class = "container">
             <div class = "c_feature_box_features">
@@ -100,7 +100,7 @@
                         <div class="col-lg-4">
                             <div class="c_box_item">
 
-                                <img src = "img/robos/foxbot.jpg" class = "resize_foxbot"></img>
+                                <img src = "img/robos/FoxBot/foxbot.jpg" class = "resize_foxbot">
                             </div>
                         </div>
                         <div class="col-lg-4">
@@ -180,15 +180,22 @@
                             </div><br>
                             <p style = "font-size:36px; color: #BF102D">MÍDIA</p>
                             <hr>
-                            <div id="main_slider_robots" class="rev_slider" data-version="5.3.1.6">
-                              <ul>
-                                <li data-index="rs-2948" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="1000"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Intro" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                                <!-- MAIN IMAGE -->
-                                    <img src="img/Equipe/equipe.jpeg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
-                                <li data-index="rs-2949" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="1000"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Intro" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                                <!-- MAIN IMAGE -->
-                                    <img src="img/Equipe/Equipe_sem_Sorriso.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
-                              </ul>
+
+                            <div class = "container">
+                                <div class = "row">
+                                <div class = "col-lg-8">
+
+
+                                </div>
+                                <div id = "big_image">
+                                    <img class = "resize_big_image" src = "img/Robos/FoxBot/FoxBot.jpg" ></div>
+                                </div>
+                                                                    <ul id = "galeria">
+                                        <li><img onClick= "loadImg('img/Robos/FoxBot/FoxBot.jpg')" class = "resize_thumb thumbnail_robots" src = "img/Robos/FoxBot/FoxBot.jpg"></li>
+                                        
+                                        <li><img onClick= "loadImg('img/Robos/FoxBot/FoxBot_antigo.JPG')" class = "resize_thumb thumbnail_robots" src = "img/Robos/FoxBot/FoxBot_antigo.JPG"></li>
+                                    </ul>
+                            </div>
                             </div>
 
 
@@ -307,5 +314,16 @@
         <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
         <script src="vendors/parallaxer/jquery.parallax-1.1.3.js"></script>
         <script src="js/theme.js"></script>
+        <!-- AJAX para atualizar a imagem -->
+        <script>
+                function loadImg(url) {
+                    var str1 = '<img class = "resize_big_image" src =';
+                    var str2 = str1.concat(url)
+                    var str3 = '>';
+                    var res = str2.concat(str3);
+
+                    document.getElementById("big_image").innerHTML = res;
+                }
+            </script>
     </body>
 </html>

@@ -48,6 +48,25 @@ Table of Content:
 /*----------------------------------------------------*/
 
 
+ul#galeria li{
+  display:inline;
+}
+
+.resize_patrocinadores{
+  width : 241px;
+  height : 100px;
+}
+
+.resize_thumb{
+  width : 110px;
+  height : 75px;
+}
+
+.resize_big_image{
+  width : 625px;
+  height : 338px;
+}
+
 
 
 .features_robo{
@@ -69,8 +88,19 @@ img.thumbnail {
 }
 
 img.thumbnail:hover {
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    box-shadow: 0 0 2px 1px #BF102D;
 }
+img.thumbnail_robots {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  
+}
+
+img.thumbnail_robots:hover {
+    box-shadow: 0 0 2px 1px #BF102D;
+}
+
 img.darken{
   opacity:0.1;
 }
@@ -98,6 +128,18 @@ img.resize_foxbot{
   background: white;
   padding: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);}
+
+.card_robots{
+  border-radius: 5px;
+  margin: 0 12px 20px 0;
+  background: #BF102D;
+  padding: 3px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  
+}
+.card_robots:hover{
+  box-shadow: 6px 6px 5px grey;
+}
 
 .Nome_equipe{
   color:#BF102D;
@@ -634,6 +676,7 @@ img.resize_digao{
 
 .c_feature_box {
   -webkit-box-shadow: 0px 25px 49px 0px rgba(58, 74, 88, 0.1);
+  /* box-shadow: 6px 6px 5px grey; */
   box-shadow: 0px 25px 49px 0px rgba(58, 74, 88, 0.1);
   border-radius: 2px;
   background: #fff;
