@@ -37,16 +37,20 @@
         <![endif]-->
     </head>
     <body>
-
-        <!--================Search Area =================-->
-        <section class="search_area">
-            <div class="search_inner">
-                <input type="text" placeholder="Enter Your Search...">
-                <i class="ti-close"></i>
+        <!-- Trigger/Open The Modal (Descomentar esse div quando for adicionar o form no site)-->
+        <!-- <button id="myBtn">Open Modal</button>
+        <div id = "myModal" class = "modal">
+            <div class = "modal-content">
+                <span class = "close">&times;</span>
+                <a href = "https://docs.google.com/forms/d/e/1FAIpQLScOu4F9IROGepQOe6qx7wB5RyHWrcyJ1HDxE2RC-tjnRbwNXw/viewform?usp=sf_link">
+                
+                <img src = "img/marketing/processo_seletivo.jpeg" style = "width : 100%">
+            </a>
             </div>
-        </section>
-        <!--================End Search Area =================-->
-        <!--================Header Menu Area fox2.gif=================-->
+        </div> -->
+    
+
+        <!--================ Barra de navegação =================-->
 
           <header class="main_menu_area">
               <nav class="navbar navbar-expand-lg navbar-light bg-light ">
@@ -62,19 +66,19 @@
                           <!-- <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> -->
                           <nav>
                           <!-- <li class="nav-item active"><a class="nav-link " href="#section1">Home</a></li> -->
-                          <li class="nav-item active"><a class="nav-link button" href="#section2">Sobre</a></li>
-                          <li class="nav-item active"><a class="nav-link" href="equipe.html">Equipe</a></li>
+                          <!-- <li class="nav-item active"><a class="nav-link button" href="#section2">Sobre</a></li> -->
+                          <li class="nav-item active"><a class="nav-link" href="#section2">Equipe</a></li>
 
                           <li class="nav-item active slide_to"><a class="nav-link" href="#section3">Robôs</a></li>
                           <!-- <li class="nav-item active"><a class="nav-link" href="#section4">A Equipe</a></li> -->
-                          <li class="nav-item active"><a class="nav-link" href="#section5">Contato</a></li>
+                          <li class="nav-item active"><a  class="nav-link" href="#section5">Contato</a></li>
                         </nav>
                       </ul>
                   </div>
               </nav>
           </header>
 
-        <!--================End Header Menu Area =================-->
+        <!--================ Fim barra de navegação =================-->
 
         <!--================Slider Area  =================-->
         <section  id = "section1">
@@ -174,7 +178,7 @@
 
                         <div class="col-lg-4">
                             <div class="c_box_item subtitle">
-                                <h4 style = "font-size: 28px;"><i class="fa fa-diamond" aria-hidden="true"></i>PATROCINADORES</h4>
+                                <h4 style = "font-size: 27px;"><i class="fa fa-diamond" aria-hidden="true"></i>PATROCINADORES</h4>
                                <p><a href = "http://www.leonpinturas.com.br" target="_blank"><img class ="resize_patrocinadores" src = "img/Logos/Leon_Pinturas.png" ></a><br/>
                               
                                </p>
@@ -186,8 +190,9 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="d_feature_text">
-                                <div class="main_title">
-                                    <h2>A Equipe</h2>
+                                <!-- antigo main_title -->
+                                <div class="b_center_title">
+                                    <h2>Equipe</h2>
                                 </div>
                                 <p>A equipe SMASH foi fundada no final de abril de 2016 por um grupo de 3 alunos de engenharia mecânica e mecatrônica como um grupo de robótica aplicado a batalhas de robôs. </p>
                                 <p>Atualmente, contamos com 12 integrantes na equipe com o objetivo de participar de competições de batalha de robôs na Winter Challenge, Campus Party, Robogames, entre outros.</p>
@@ -196,7 +201,7 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="d_feature_img">
-                                <img class="resize_equipe" src="img/equipe/Equipe_sem_Sorriso.jpg" alt="">
+                                <img class="resize_equipe" src="img/Equipe/Equipe_sem_Sorriso.jpg" alt="">
                             </div>
                         </div>
                     </div>
@@ -236,19 +241,19 @@
                                     <p><strong>Categoria:</strong> Beetleweight(1,36kg)<br>
                                     <strong>Ano de criação:</strong> 2017<br>
                                   <b>Tipo de arma:</b> Horizontal Spinner</p>
-                                    <a class="more_btn" href="#">Leia Mais</a>
+                                    <a class="more_btn" href="Beetlefox.html">Leia Mais</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
                             <div class="l_news_item">
-                                <div class="l_news_img"><a href="#"><img class="img-fluid" src="img/Robos/Digoncius/Digoncius.jpg"  alt=""></a></div>
+                                <div class="l_news_img"><a href="digoncius.html"><img class="img-fluid" src="img/Robos/Digoncius/Digoncius.jpg"  alt=""></a></div>
                                 <div class="l_news_content">
                                     <a href="#"><h4>Digoncius</h4></a>
                                     <p><strong>Categoria:</strong> Beetleweight(1,36kg)<br>
                                     <strong>Ano de criação:</strong> 2017<br>
                                   <b>Tipo de arma:</b> Drum</p>
-                                    <a class="more_btn" href="#">Leia Mais</a>
+                                    <a class="more_btn" href="digoncius.html">Leia Mais</a>
                                 </div>
                             </div>
                         </div>
@@ -256,6 +261,57 @@
                 </div>
             </div>
         </section>
+        
+        <!-- ================ AREA DAS NOTÍCIAS ================= -->
+        <section class="digital_feature p_100 creative_feature_area" id = "section4">
+            <div class="container">
+                <div class = "row">
+                    <div class = "col-sm-12">
+                    
+                <div class="b_center_title">
+                    <h2>Notícias</h2>
+                    <p>Acompanhe as últimas novidades da equipe!</p>
+
+                </div>
+                <div class="l_news_inner">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="l_news_item">
+                                <div class="l_news_img"><a href="news/expo2018.html"><img class="img-fluid" src="img/Noticias/expo.jpg" alt=""></a></div>
+                                <div class="l_news_content" >
+                                    <a href="#"><h4>Expo Engenharia 2018</h4></a>
+                                    <p>A expo de 2018 foi repleta de novidades</p>
+                                    <a class="more_btn" href="#">Leia Mais</a>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        <!-- <div class="col-lg-4 col-md-6">
+                            <div class="l_news_item">
+                                <div class="l_news_img"><a href="#"><img class="img-fluid" src="img/Noticias/winter2018.jpeg" alt=""></a></div>
+                                <div class="l_news_content">
+                                    <a href="#"><h4>Winter Challenge XVI</h4></a>
+                                    <a class="more_btn" href="#">Leia Mais</a>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- <div class="col-lg-4 col-md-6">
+                            <div class="l_news_item">
+                                <div class="l_news_img"><a href="#"><img class="img-fluid" src="img/Noticias/winter2017.JPG"  alt=""></a></div>
+                                <div class="l_news_content">
+                                    <a href="#"><h4>Winter Challenge XV</h4></a>
+                                    <a class="more_btn" href="#">Leia Mais</a>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+            </div>
+        </section> 
 
         <!--================Footer Area =================-->
         <footer class="footer_area" id = "section5">
@@ -269,10 +325,11 @@
                                 </div>
                                 <p><i class="fa fa-phone" aria-hidden="true"></i>
                                     +55 11 961955559</p>
-                                <p><i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                    roboticsmash@gmail.com</p>
+                                <p></p><a href = "mailto:roboticsmash@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                    roboticsmash@gmail.com</p></a>
                                 <!-- <a style = "font-size:20px;color : #ffffff" href="#">+55 11 961955559</a> -->
                                 <!-- <a href="#">info.deercreative@gmail.com</a> -->
+                                <img style = "width: 30%" src = "img/Logos/Insper-negativo.png">
                                 <p>Rua Quata, 300 <br/>
                                 CEP: 04546-042<br />São Paulo, SP</p>
                                 <!-- <h6>Open hours: 8.00-18.00 Mon-Fri</h6> -->
@@ -282,9 +339,9 @@
                                     <h3>Social:</h3>
                                 </div>
                                 <ul>
-                                    <li><a href="https://www.facebook.com/roboticsmash/"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="https://www.youtube.com/channel/UCmmeuO2rS1r2xn0Mh2SZXIA"><i class="fa fa-youtube"></i></a></li>
-                                    <li><a href="https://www.instagram.com/roboticsmash/?hl=pt-br"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="https://www.facebook.com/smashrobotics/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.youtube.com/channel/UCmmeuO2rS1r2xn0Mh2SZXIA" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                                    <li><a href="https://www.instagram.com/smashrobotics/?hl=pt-br" target="_blank"><i class="fa fa-instagram"></i></a></li>
                                 </ul>
                             </aside>
                         </div>
@@ -342,9 +399,38 @@
 
 
         <script src="js/theme.js"></script>
+        <!-- Script para deslizar para o div -->
         <script src = "js/slidetodiv.js"></script>
         <script>$('.element').hover(
         function(){$(this).toggleClass('classname');}
         );</script>
+        <!-- Anunciar eventos na home page(ex:form do processo seletivo) -->
+        <script>
+                // Get the modal
+                var modal = document.getElementById('myModal');
+                
+                // Get the button that opens the modal
+                var btn = document.getElementById("myBtn");
+                
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+                
+                // When the user clicks the button, open the modal 
+                btn.onclick = function() {
+                  modal.style.display = "block";
+                }
+                
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() {
+                  modal.style.display = "none";
+                }
+                
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                  if (event.target == modal) {
+                    modal.style.display = "none";
+                  }
+                }
+                </script>
     </body>
 </html>

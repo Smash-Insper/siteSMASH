@@ -47,7 +47,43 @@ Table of Content:
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 31; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
 
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 ul#galeria li{
   display:inline;
@@ -63,12 +99,27 @@ ul#galeria li{
   height : 75px;
 }
 
-.resize_big_image{
+/* .resize_big_image{
   margin-top: 11px;
   width : 780px;
   height : 449px;
+} */
+.resize_big_image{
+  margin-top: 11px;
+  width : 100%;
+  height : auto;
+  /* display: block; */
+  /* padding-left:5%;
+  padding-right:5% */
 }
-
+.col-xs-8{
+  padding-left:7%;
+  padding-right:7%
+}
+/* #ajusta .col-xs-8{
+  padding-left:10%;
+  padding-right:10%
+} */
 
 
 .features_robo{
@@ -229,9 +280,13 @@ i:before {
 }
 
 
-img.resize_equipe {
+/* img.resize_equipe {
   width:500px;
-  height:280px;
+  height:300px;
+} */
+img.resize_equipe {
+  width:100%;
+  height:auto;
 }
 
 img.resize_equipe2 {
@@ -346,7 +401,7 @@ img.resize_digao{
 .main_menu_area .navbar {
   padding: 0px;
   /* background-color: transparent !important; */
-  background-color: black !important;
+  /* background-color: black !important; */
   background-image: url("../img/textura/fibra_de_carbono.jpg");
 
 }
@@ -373,7 +428,7 @@ img.resize_digao{
 .main_menu_area .navbar .navbar-nav li a {
   padding: 0px;
   line-height: 99px;
-  color: #fff;
+  /* color: #fff; */
   font-size: 18px;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -416,6 +471,8 @@ img.resize_digao{
 .main_menu_area .navbar .navbar-nav li.submenu .dropdown-menu li {
   display: block;
   margin-right: 0px;
+  background-image: url("../img/textura/fibra_de_carbono.jpg");
+
 }
 
 .main_menu_area .navbar .navbar-nav li.submenu .dropdown-menu li a {
@@ -427,6 +484,7 @@ img.resize_digao{
   text-shadow: none;
   line-height: 42px;
   color: #232d37;
+  background-image: url("../img/textura/fibra_de_carbono.jpg");
   -webkit-transition: all 400ms linear 0s;
   -o-transition: all 400ms linear 0s;
   transition: all 400ms linear 0s;
@@ -772,7 +830,7 @@ img.resize_digao{
 }
 
 .d_feature_text p {
-  font-size: 14px;
+  font-size:14px;
   color: #51545f;
   font-family: "Poppins", sans-serif;
   line-height: 26px;
@@ -949,7 +1007,7 @@ img.resize_digao{
   text-align: center;
   position: relative;
   background-size: 200% auto;
-  z-index: 2;
+  z-index: 1;
   display: block;
   -webkit-transition: all 400ms ease-out;
   -o-transition: all 400ms ease-out;
@@ -1321,6 +1379,7 @@ img.resize_digao{
 
 .l_news_item .l_news_img a {
   display: block;
+  float: left;
 }
 
 .l_news_item .l_news_img img {
