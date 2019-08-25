@@ -1,0 +1,73 @@
+[debug] [2019-08-15T02:38:03.588Z] ----------------------------------------------------------------------
+[debug] [2019-08-15T02:38:03.591Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\arfom\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2019-08-15T02:38:03.591Z] CLI Version:   7.2.2
+[debug] [2019-08-15T02:38:03.591Z] Platform:      win32
+[debug] [2019-08-15T02:38:03.591Z] Node Version:  v10.16.2
+[debug] [2019-08-15T02:38:03.592Z] Time:          Wed Aug 14 2019 23:38:03 GMT-0300 (Brasilia Standard Time)
+[debug] [2019-08-15T02:38:03.592Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-08-15T02:38:03.607Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-15T02:38:03.608Z] > authorizing via signed-in user
+[debug] [2019-08-15T02:38:03.609Z] [iam] checking project smash-db3ac for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-08-15T02:38:03.611Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/smash-db3ac:testIamPermissions  
+
+[debug] [2019-08-15T02:38:05.204Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-15T02:38:05.207Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/smash-db3ac  
+ 
+[debug] [2019-08-15T02:38:06.530Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'smash-db3ac'...
+[info] 
+[info] i  deploying hosting
+[debug] [2019-08-15T02:38:06.549Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/smash-db3ac/versions  
+
+[debug] [2019-08-15T02:38:08.577Z] <<< HTTP RESPONSE 200
+[info] i  hosting[smash-db3ac]: beginning deploy...
+[info] i  hosting[smash-db3ac]: found 289 files in public
+[debug] [2019-08-15T02:38:08.733Z] [hosting] hash cache [cHVibGlj] load error: lines is not defined
+[debug] [2019-08-15T02:38:13.872Z] [hosting] hash cache [cHVibGlj] stored for 289 files
+[debug] [2019-08-15T02:38:13.872Z] [hosting][hash queue][FINAL]
+[debug] [2019-08-15T02:38:13.873Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/smash-db3ac/versions/1584f235a395ffd6:populateFiles  
+ <request body omitted>
+[debug] [2019-08-15T02:38:18.310Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-15T02:38:18.378Z] [hosting][populate queue][FINAL]
+[debug] [2019-08-15T02:38:18.378Z] [hosting] uploads queued: 259
+[debug] [2019-08-15T02:38:20.048Z] [hosting][upload]
+[debug] [2019-08-25T20:13:09.113Z] ----------------------------------------------------------------------
+[debug] [2019-08-25T20:13:09.121Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\arfom\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2019-08-25T20:13:09.121Z] CLI Version:   7.2.2
+[debug] [2019-08-25T20:13:09.121Z] Platform:      win32
+[debug] [2019-08-25T20:13:09.121Z] Node Version:  v10.16.2
+[debug] [2019-08-25T20:13:09.121Z] Time:          Sun Aug 25 2019 17:13:09 GMT-0300 (Brasilia Standard Time)
+[debug] [2019-08-25T20:13:09.121Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-08-25T20:13:09.180Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-25T20:13:09.184Z] > authorizing via signed-in user
+[debug] [2019-08-25T20:13:09.184Z] [iam] checking project smash-db3ac for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-08-25T20:13:09.188Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-08-25T20:13:09.188Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-08-25T20:13:10.470Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-25T20:13:10.474Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/smash-db3ac:testIamPermissions  
+
+[debug] [2019-08-25T20:13:11.520Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-25T20:13:11.524Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/smash-db3ac  
+ 
+[debug] [2019-08-25T20:13:12.822Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'smash-db3ac'...
+[info] 
+[info] i  deploying hosting
+[debug] [2019-08-25T20:13:12.844Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/smash-db3ac/versions  
+
+[debug] [2019-08-25T20:13:14.659Z] <<< HTTP RESPONSE 200
+[info] i  hosting[smash-db3ac]: beginning deploy...
+[info] i  hosting[smash-db3ac]: found 314 files in public
+[debug] [2019-08-25T20:13:14.863Z] [hosting] hash cache [cHVibGlj] load error: lines is not defined
+[debug] [2019-08-25T20:13:27.423Z] [hosting] hash cache [cHVibGlj] stored for 314 files
+[debug] [2019-08-25T20:13:27.423Z] [hosting][hash queue][FINAL]
+[debug] [2019-08-25T20:13:27.423Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/smash-db3ac/versions/25351c3bf675d477:populateFiles  
+ <request body omitted>
+[debug] [2019-08-25T20:13:32.342Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-25T20:13:32.411Z] [hosting][populate queue][FINAL]
+[debug] [2019-08-25T20:13:32.411Z] [hosting] uploads queued: 76
